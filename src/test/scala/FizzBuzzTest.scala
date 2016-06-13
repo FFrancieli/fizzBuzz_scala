@@ -45,4 +45,12 @@ class FizzBuzzTest extends FunSuite with BeforeAndAfterEach {
     assert(fizzBuzz.fizzBuzz(80) == "buzz")
   }
 
+  test("should return fizzBuzz for any multiple of 3 and 5"){
+    assert(fizzBuzz.fizzBuzz(15) == "fizzBuzz")
+    assert(fizzBuzz.fizzBuzz(30) == "fizzBuzz")
+    assert(fizzBuzz.fizzBuzz(45) == "fizzBuzz")
+    assert(fizzBuzz.fizzBuzz(60) == "fizzBuzz")
+    assert(fizzBuzz.fizzBuzz(75) == "fizzBuzz")
+  }
+
 }
