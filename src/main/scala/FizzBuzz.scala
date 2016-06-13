@@ -1,12 +1,13 @@
 class FizzBuzz {
 
+
   def fizzBuzz(number:Int) = {
     if(isMultipleOfFive(number) && isMultipleOfThree(number)){
-      "fizzBuzz"
+      'fizzBuzz
     } else if ( isMultipleOfThree(number) ){
-      "fizz"
+      'fizz
     } else if (isMultipleOfFive(number)){
-      "buzz"
+      'buzz
     } else number
   }
 
