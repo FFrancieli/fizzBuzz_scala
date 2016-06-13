@@ -8,7 +8,7 @@ class FizzBuzzTest extends FunSuite with BeforeAndAfterEach {
     fizzBuzz = new FizzBuzz
   }
 
-  test("Should return number"){
+  test("should return number"){
     val fizzBuzz:FizzBuzz = new FizzBuzz
 
     assert(fizzBuzz.fizzBuzz(1) == 1)
@@ -18,12 +18,24 @@ class FizzBuzzTest extends FunSuite with BeforeAndAfterEach {
     assert(fizzBuzz.fizzBuzz(83) == 83)
   }
 
-  test("Should return fizz for number three"){
+  test("should return fizz for number three"){
     assert(fizzBuzz.fizzBuzz(3) == "fizz")
   }
 
-  test("Should return buzz for number five"){
+  test("should return buzz for number five"){
     assert(fizzBuzz.fizzBuzz(5) == "buzz")
+  }
+
+  test("should return fizzBuzz for number 15"){
+    assert(fizzBuzz.fizzBuzz(15) == "fizzBuzz")
+  }
+
+  test("should return fizz for any multiple of three"){
+    assert(fizzBuzz.fizzBuzz(3) == "fizz")
+    assert(fizzBuzz.fizzBuzz(6) == "fizz")
+    assert(fizzBuzz.fizzBuzz(9) == "fizz")
+    assert(fizzBuzz.fizzBuzz(27) == "fizz")
+    assert(fizzBuzz.fizzBuzz(99) == "fizz")
   }
 
 }
