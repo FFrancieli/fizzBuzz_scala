@@ -22,5 +22,8 @@ class FizzBuzzTest extends FunSuite with BeforeAndAfterEach {
     assert(fizzBuzz.fizzBuzz(3) == "fizz")
   }
 
+  test("Should return buzz for number five"){
+    assert(fizzBuzz.fizzBuzz(5) == "buzz")
+  }
 
 }
