@@ -1,4 +1,4 @@
-class FizzBuzz {
+object FizzBuzz {
 
 
   def fizzBuzz(number:Int) = (isMultipleOfThree(number), isMultipleOfFive(number)) match {
